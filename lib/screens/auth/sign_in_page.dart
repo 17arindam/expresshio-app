@@ -1,8 +1,11 @@
+import 'package:expresshio/screens/auth/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatefulWidget {
+  const SignInPage({super.key});
+
   @override
-  _SignInPageState createState() => _SignInPageState();
+  State<SignInPage> createState() => _SignInPageState();
 }
 
 class _SignInPageState extends State<SignInPage> {
@@ -112,6 +115,7 @@ class _SignInPageState extends State<SignInPage> {
                           TextButton(
                             onPressed: () {
                               // Handle create account action here
+                              Navigator.push(context,MaterialPageRoute(builder: (context)=>SignUpPage()));
                             },
                             child: Text(
                               'Create Account',
